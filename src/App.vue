@@ -2,21 +2,23 @@
   <v-app>
     <v-toolbar color="black" title="NOMINAL" app>
       <v-spacer />
-      <v-btn :rounded="0" href="https://grifpkg.com" color="red" variant="text">
-        GRIFPKG
-      </v-btn>
-      <v-btn :rounded="0" href="https://purecore.io" color="red" variant="text">
-        PURECORE
-      </v-btn>
-      <v-btn :rounded="0" href="https://discord.gg/wUtrrHH6qx" color="red" variant="flat">
-        DISCORD
-      </v-btn>
+      <template v-if="$vuetify.display.mdAndUp">
+        <v-btn :rounded="0" href="https://grifpkg.com" color="red" variant="text">
+          GRIFPKG
+        </v-btn>
+        <v-btn :rounded="0" href="https://purecore.io" color="red" variant="text">
+          PURECORE
+        </v-btn>
+        <v-btn :rounded="0" href="https://discord.gg/wUtrrHH6qx" color="red" variant="flat">
+          DISCORD
+        </v-btn>
+      </template>
     </v-toolbar>
     <v-main>
-      <v-sheet color=red class="mb-10" style="height:400px; position:relative;width:100%">
+      <v-sheet color=red class="mb-10" style="height:400px; position:relative;width:100%;overflow:hidden">
         <Gradient style="position:absolute;top:0px;left:0px;z-index: 0;" />
-        <div style="position:absolute;width:100%;height:100%;left:0px;top:0px">
-          <v-row align="center" justify="center" class="fill-height">
+        <div style="position:absolute;width:100%;height:100%;left:0px;top:0px;" class="px-5">
+          <v-row align="center" justify="center" class="fill-height mb-0">
             <v-col class="text-center">
               <h1 class="title">EMPOWERING THE INTERNET</h1>
               <h3 class="title">DEVELOP・DEPLOY・STUDY</h3>
@@ -47,8 +49,8 @@
           </div>
         </v-card>
       </v-container>
-      <v-footer absolute class="mt-10" color="red">
-        <v-container class="text-right py-1" style="width:100%">
+      <v-footer absolute class="mt-10" color="red-darken-3">
+        <v-container class="text-center py-1" style="width:100%">
           &copy; nominal S.L {{new Date().getFullYear()}}. Barcelona, Spain
         </v-container>
       </v-footer>
@@ -57,6 +59,9 @@
 </template>
 
 <style>
+.v-container{
+  max-width:900px
+}
 .v-card {
   text-align: justify;
   line-height: 26px;
