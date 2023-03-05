@@ -1,25 +1,34 @@
 {
-  "name": "nominal.es",
+  "name": "vuetify-project",
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "serve": "vite preview",
-    "build": "vite build",
     "dev": "vite",
-    "preview": "vite preview"
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --fix --ignore-path .gitignore"
   },
   "dependencies": {
-    "@mdi/font": "5.9.55",
-    "roboto-fontface": "*",
-    "vue": "^3.2.37",
-    "vuetify": "npm:@vuetify/nightly@next",
-    "webfontloader": "^1.0.0"
+    "@mdi/font": "7.0.96",
+    "copy-to-clipboard": "^3.3.3",
+    "core-js": "^3.29.0",
+    "number-abbreviate": "^2.0.0",
+    "roboto-fontface": "^0.10.0",
+    "tippy.js": "^6.3.7",
+    "ua-parser-js": "^1.0.34",
+    "vue": "^3.2.47",
+    "vue-router": "^4.1.6",
+    "vue3-marquee": "^3.1.2",
+    "vue3-parallax": "^0.1.4",
+    "vuetify": "^3.1.7",
+    "webfontloader": "^1.6.28"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^3.0.3",
-    "vite": "^3.0.8",
-    "vite-plugin-vuetify": "^1.0.0-alpha.12",
-    "vue-cli-plugin-vuetify": "~2.5.8"
-  },
-  "type": "module"
+    "@vitejs/plugin-vue": "^3.2.0",
+    "eslint": "^8.35.0",
+    "eslint-plugin-vue": "^9.9.0",
+    "sass": "^1.58.3",
+    "vite": "^3.2.5",
+    "vite-plugin-vuetify": "^1.0.2"
+  }
 }
