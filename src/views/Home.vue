@@ -1,8 +1,8 @@
 <template>
     <v-container>
-        <div style="margin: 100px auto 100px auto; max-width: 600px;" class="text-center">
-            <h1 style="font-size: 54px;">
-                develop <v-icon size="x-small" icon="mdi-wrench" />,
+        <div style="margin: 100px auto 100px auto; max-width: 670px;" class="text-center">
+            <h1 style="font-size: 70px;">
+                develop <v-icon size="x-small" icon="mdi-wrench" />,<br>
                 deploy <v-icon size="x-small" icon="mdi-source-merge" />,
                 study <v-icon size="x-small" icon="mdi-chart-line-variant" />,
                 monetize <v-icon size="x-small" icon="mdi-piggy-bank" />
@@ -69,7 +69,7 @@
                 <v-card variant="tonal" color="primary" class="pa-7 text-center">
                     <h2 class="mb-3">grifpkg</h2>
                     <p>Easily develop manage, publish and monetize game addons</p>
-                    <v-btn href="https://grifpkg.io" class="mt-5" icon="mdi-open-in-new"/>
+                    <v-btn href="https://grifpkg.com" class="mt-5" icon="mdi-open-in-new"/>
                 </v-card>
             </v-col>
             <v-col md="6" cols="12">
