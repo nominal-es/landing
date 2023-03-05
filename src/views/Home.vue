@@ -1,15 +1,15 @@
 <template>
     <v-container>
         <div style="margin: 100px auto 100px auto; max-width: 670px;" class="text-center">
-            <h1 style="font-size: 4.3em;">
+            <h1 class="hero">
                 develop <v-icon size="x-small" icon="mdi-wrench" />,<br>
                 deploy <v-icon size="x-small" icon="mdi-source-merge" />,
                 study <v-icon size="x-small" icon="mdi-chart-line-variant" />,
                 monetize <v-icon size="x-small" icon="mdi-piggy-bank" />
             </h1>
-            <h1 style="font-size:2.2em" class="mt-10">
+            <h2 class="hero mt-10">
                 <v-icon icon="mdi-atom" />nominal
-            </h1>
+            </h2>
         </div>
         <v-card theme="dark" class="mb-10">
             <h2 class="pa-5"><v-icon size="x-small" icon="mdi-wrench" /> develop</h2>
@@ -60,9 +60,9 @@
             </div>
         </v-card>
         <div style="max-width: 500px;margin:auto" class="text-center my-10 py-10">
-            <h1 style="font-size: 2.6em;">
+            <h2 class="hero">
                 start improving your workflow and getting paid for your hobbies
-            </h1>
+            </h2>
         </div>
         <v-row>
             <v-col md="6" cols="12">
