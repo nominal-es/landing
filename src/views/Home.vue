@@ -1,13 +1,13 @@
 <template>
     <v-container>
-        <div style="margin: 100px auto 100px auto; max-width: 500px;" class="text-center">
-            <h1 style="font-size: 43px;">
+        <div style="margin: 100px auto 100px auto; max-width: 600px;" class="text-center">
+            <h1 style="font-size: 54px;">
                 develop <v-icon size="x-small" icon="mdi-wrench" />,
                 deploy <v-icon size="x-small" icon="mdi-source-merge" />,
                 study <v-icon size="x-small" icon="mdi-chart-line-variant" />,
                 monetize <v-icon size="x-small" icon="mdi-piggy-bank" />
             </h1>
-            <h1 class="mt-10">
+            <h1 style="font-size:36px" class="mt-10">
                 <v-icon icon="mdi-atom" />nominal
             </h1>
         </div>

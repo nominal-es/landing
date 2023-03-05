@@ -18,7 +18,7 @@
       <router-view />
     </v-main>
     <v-footer app absolute class="py-10">
-      <div class="text-center" style="margin:auto;padding-top:100px">
+      <div class="text-center" style="margin:auto;margin-top:50px">
         <p>© nominal SL {{ new Date().getFullYear() }}. Barcelona, Spain</p>
         <h2 class="mt-5"><v-icon icon="mdi-atom" />nominal</h2>
       </div>
