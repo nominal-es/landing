@@ -12,11 +12,11 @@
         </v-col>
         <v-spacer v-else/>
         <v-col cols="auto">
-          <v-btn v-if="$vuetify.display.mdAndUp" theme="dark" variant="tonal" color="#5865F2"
+          <v-btn v-if="$vuetify.display.mdAndUp" theme="dark" variant="tonal" color="primary"
             prepend-icon="fa:fab fa-discord" to="/discord">
             Discord
           </v-btn>
-          <v-btn size="small" v-else theme="dark" variant="tonal" color="#5865F2" icon="fa:fab fa-discord"
+          <v-btn size="small" v-else theme="dark" variant="tonal" color="primary" icon="fa:fab fa-discord"
             to="/discord" />
         </v-col>
       </v-row>
@@ -24,10 +24,10 @@
     <v-main>
       <router-view />
     </v-main>
-    <v-footer app absolute class="py-10">
-      <div class="text-center" style="margin:auto;margin-top:50px">
+    <v-footer color="transparent" app absolute>
+      <div class="text-center mt-10" style="margin:auto;">
         <p>© nominal SL {{ new Date().getFullYear() }}. Barcelona, Spain</p>
-        <h2 class="mt-5 hero"><v-icon icon="mdi-atom" />nominal</h2>
+        <h2 class="mt-5 mb-7 hero"><v-icon icon="mdi-atom" />nominal</h2>
       </div>
     </v-footer>
   </v-app>
