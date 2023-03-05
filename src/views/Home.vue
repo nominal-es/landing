@@ -19,7 +19,7 @@
                     <v-chip theme="light" color="primary" label size="small">grifpkg</v-chip> easily define both free and paid dependencies for game servers, keep them up-to-date, spin-up temporary instances, and more
                 </v-card>
                 <v-card class="pa-5">
-                    <v-chip theme="light" color="primary" label size="small">playtics</v-chip> create customized web and game experiences, such as creating custom checkout flows, login systems, game data syncing, permission control, and more
+                    <v-chip theme="light" color="primary" label size="small">purecore</v-chip> create customized web and game experiences, such as creating custom checkout flows, login systems, game data syncing, permission control, and more
                 </v-card>
             </div>
         </v-card>
@@ -31,7 +31,7 @@
                     <v-chip theme="light" color="primary" label size="small">grifpkg</v-chip> automatically republish your plugins in software platforms instead of having to publish every update on every site manually on a regular basis
                 </v-card>
                 <v-card class="pa-5">
-                    <v-chip theme="light" color="primary" label size="small">playtics</v-chip> automatically or manually create powerful game servers at a record price, with extremely quick setup times, amazing reliability, and a high amount of dedicated compute power
+                    <v-chip theme="light" color="primary" label size="small">purecore</v-chip> automatically or manually create powerful game servers at a record price, with extremely quick setup times, amazing reliability, and a high amount of dedicated compute power
                 </v-card>
             </div>
         </v-card>
@@ -43,7 +43,7 @@
                     <v-chip theme="light" color="primary" label size="small">grifpkg</v-chip> get detailed download statistics for your software, and quickly determine if the software you are using is on the path of being abandonware
                 </v-card>
                 <v-card class="pa-5">
-                    <v-chip theme="light" color="primary" label size="small">playtics</v-chip> get macro and micro analysis for your community. easily determine player retention, gameplay performance, player interactions, community popularity, and more
+                    <v-chip theme="light" color="primary" label size="small">purecore</v-chip> get macro and micro analysis for your community. easily determine player retention, gameplay performance, player interactions, community popularity, and more
                 </v-card>
             </div>
         </v-card>
@@ -55,7 +55,7 @@
                     <v-chip theme="light" color="primary" label size="small">grifpkg</v-chip> get money from sponsored download pages, donation links and widgets, and sponsored messages when installing or updating your software
                 </v-card>
                 <v-card class="pa-5">
-                    <v-chip theme="light" color="primary" label size="small">playtics</v-chip> sell one-time or reccurent in-game perks or community badges via your webstore, create web designs for other playtics customers, and get paid from your supporters
+                    <v-chip theme="light" color="primary" label size="small">purecore</v-chip> sell one-time or reccurent in-game perks or community badges via your webstore, create web designs for other purecore customers, and get paid from your supporters
                 </v-card>
             </div>
         </v-card>
@@ -74,7 +74,7 @@
             </v-col>
             <v-col md="6" cols="12">
                 <v-card :border="0" variant="tonal" color="primary" class="pa-7 text-center">
-                    <h2 class="mb-3">playtics</h2>
+                    <h2 class="mb-3">purecore</h2>
                     <p>Easily monetize, host and study your gaming community</p>
                     <v-btn href="https://purecore.io" class="mt-5" icon="mdi-open-in-new"/>
                 </v-card>
