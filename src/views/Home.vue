@@ -28,10 +28,10 @@
             <v-divider />
             <div class="pa-5">
                 <v-card class="pa-5 mb-5">
-                    <v-chip theme="light" color="primary" label size="small">grifpkg</v-chip> automatically republish your plugins on software platforms instead of having to publish every update on every site on a regular basis
+                    <v-chip theme="light" color="primary" label size="small">grifpkg</v-chip> automatically republish your plugins in software platforms instead of having to publish every update on every site manually on a regular basis
                 </v-card>
                 <v-card class="pa-5">
-                    <v-chip theme="light" color="primary" label size="small">playtics</v-chip> automatically or manually powerful game servers at a record price, with extremely quick setup times, amazing reliability, and a high amount of dedicated compute power
+                    <v-chip theme="light" color="primary" label size="small">playtics</v-chip> automatically or manually create powerful game servers at a record price, with extremely quick setup times, amazing reliability, and a high amount of dedicated compute power
                 </v-card>
             </div>
         </v-card>
@@ -40,7 +40,7 @@
             <v-divider />
             <div class="pa-5">
                 <v-card class="pa-5 mb-5">
-                    <v-chip theme="light" color="primary" label size="small">grifpkg</v-chip> get detailed download statistics for your software, and determine quickly determine if the software you use on your server is on the path of being abandonware
+                    <v-chip theme="light" color="primary" label size="small">grifpkg</v-chip> get detailed download statistics for your software, and quickly determine if the software you are using is on the path of being abandonware
                 </v-card>
                 <v-card class="pa-5">
                     <v-chip theme="light" color="primary" label size="small">playtics</v-chip> get macro and micro analysis for your community. easily determine player retention, gameplay performance, player interactions, community popularity, and more
