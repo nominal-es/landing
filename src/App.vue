@@ -7,9 +7,10 @@
             <v-icon icon="mdi-atom" />nominal
           </v-app-bar-title>
         </v-col>
-        <v-col>
+        <v-col v-if="!$vuetify.display.mobile">
           empowering the internet
         </v-col>
+        <v-spacer v-else/>
         <v-col cols="auto">
           <v-btn v-if="$vuetify.display.mdAndUp" theme="dark" variant="tonal" color="#5865F2"
             prepend-icon="fa:fab fa-discord" to="/discord">
