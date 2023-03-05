@@ -28,8 +28,11 @@
     </v-main>
     <v-footer color="transparent" app absolute>
       <div class="text-center mt-10" style="margin:auto;">
-        <p>© nominal SL {{ new Date().getFullYear() }}. Barcelona, Spain</p>
-        <h2 class="mt-5 mb-7 hero"><v-icon icon="mdi-atom" />nominal</h2>
+        <h2 class="mb-3 hero"><v-icon icon="mdi-atom" />nominal</h2>
+        <p class="mb-7">© nominal SL {{ new Date().getFullYear() }}. Barcelona, Spain</p>
+        <p class="mb-7">
+          <v-btn @click="toggleTheme()" size="small" variant="tonal" icon="mdi-brightness-6"/>
+        </p>
       </div>
     </v-footer>
   </v-app>
@@ -37,6 +40,18 @@
 
 <script>
 export default {
-
+  beforeMount(){
+    if(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches){
+      this.$vuetify.theme.name='dark'
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+      this.$vuetify.theme.name = e.matches ? "dark" : "light";
+    });
+  },
+  methods:{
+    toggleTheme(){
+      this.$vuetify.theme.name = this.$vuetify.theme.name == 'light' ? "dark" : "light";
+    }
+  }
 };
 </script>
