@@ -61,7 +61,7 @@
         </v-card>
         <div style="max-width: 500px;margin:auto" class="text-center my-10 py-10">
             <h2 class="hero">
-                start improving your workflow and getting paid for your hobbies
+                start improving your workflow and get paid for your hobbies
             </h2>
         </div>
         <v-row>
