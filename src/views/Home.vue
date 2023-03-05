@@ -66,14 +66,14 @@
         </div>
         <v-row>
             <v-col md="6" cols="12">
-                <v-card variant="tonal" color="primary" class="pa-7 text-center">
+                <v-card :border="0" variant="tonal" color="primary" class="pa-7 text-center">
                     <h2 class="mb-3">grifpkg</h2>
                     <p>Easily develop manage, publish and monetize game addons</p>
                     <v-btn href="https://grifpkg.com" class="mt-5" icon="mdi-open-in-new"/>
                 </v-card>
             </v-col>
             <v-col md="6" cols="12">
-                <v-card variant="tonal" color="primary" class="pa-7 text-center">
+                <v-card :border="0" variant="tonal" color="primary" class="pa-7 text-center">
                     <h2 class="mb-3">playtics</h2>
                     <p>Easily monetize, host and study your gaming community</p>
                     <v-btn href="https://purecore.io" class="mt-5" icon="mdi-open-in-new"/>
