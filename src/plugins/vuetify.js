@@ -6,8 +6,6 @@
 
 // Styles
 import '@mdi/font/css/materialdesignicons.css'
-import { mdi } from 'vuetify/iconsets/mdi'
-import { aliases, fa } from 'vuetify/iconsets/fa'
 import 'vuetify/styles'
 
 // Composables
@@ -15,26 +13,18 @@ import { createVuetify } from 'vuetify'
 
 // https://vuetifyjs.com/en/introduction/why-vuetify/#feature-guides
 export default createVuetify({
-  icons:{
-    defaultSet: 'mdi',
-    aliases,
-    sets: {
-      mdi,
-      fa,
-    }
-  },
+  ssr: true,
+
   defaults: {
     global: {
-      elevation: 0,
       ripple: false,
-      hideDetails: true,
+      hideDetails: 'auto',
     },
     VExpansionPanel: {
-      rounded: 10,
+      rounded: 1,
     },
-    VBtn: {
-      color: 'primary',
-      rounded: 10,
+    VAutocomplete: {
+      variant: 'solo'
     },
     VAvatar: {
       rounded: 1,
@@ -43,19 +33,26 @@ export default createVuetify({
     },
     VAlert: {
       variant: 'tonal',
-      rounded: 10,
+      rounded: 1,
     },
     VBtnGroup: {
       variant: 'tonal',
       color: 'primary',
-      rounded: 10,
+      rounded: 1,
+    },
+    VSnackbar: {
+      location: 'bottom right'
     },
     VSlider: {
-      rounded: 10,
+      rounded: 1,
       color: 'primary'
     },
     VSwitch: {
+      inset: true,
       color: 'primary',
+    },
+    VChip: {
+      variant: 'elevated'
     },
     VCheckbox: {
       color: 'primary',
@@ -63,39 +60,48 @@ export default createVuetify({
     VRadioGroup: {
       color: 'primary'
     },
-    VProgressLinear: {
-      rounded: 10,
-      color: 'primary'
-    },
-    VTextField: {
-      singleLine: true,
+    VProgressCircular: {
       color: 'primary',
     },
+    VProgressLinear: {
+      rounded: 1,
+      color: 'primary'
+    },
+    VDialog: {
+      maxWidth: 400
+    },
+    VPagination: {
+      size: 'large',
+      density: 'compact'
+    },
+    VTextField: {
+      color: 'primary',
+      variant: 'solo',
+    },
+    VMenu: {
+      offset: 5
+    },
+    VTextarea: {
+      variant: 'solo'
+    },
     VCard: {
-      rounded: 10,
+      rounded: 1,
       border: true,
     },
-    VTooltip:{
-      theme:'light'
+    VTooltip: {
+      theme: 'light'
     },
     VAppBar: {
       border: "b",
     },
   },
   theme: {
-    defaultTheme: 'light',
     themes: {
       light: {
         colors: {
-          primary: '#009688',
+          primary: '#1867C0',
+          secondary: '#5CBBF6',
         },
-        dark:false
-      },
-      dark: {
-        colors: {
-          primary: '#009688',
-        },
-        dark:true
       },
     },
   },

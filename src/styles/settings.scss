@@ -5,9 +5,87 @@
  */
 
 // https://next.vuetifyjs.com/features/sass-variables/`
-// @use 'vuetify' with (
-//   $color-pack: false
-// );
+
+@use 'vuetify' with ($border-radius-root: 0.3em);
+
+:root {
+    --v-shadow-key-umbra-opacity: rgba(0, 0, 0, 0);
+    --v-shadow-key-penumbra-opacity: rgba(0, 0, 0, 0.05);
+}
+
+* {
+    transition-timing-function: cubic-bezier(.5, .5, 0, 1) !important;
+}
+
+.v-overlay__content {
+    @extend .rounded, .border
+}
+
+.v-overlay__content>.v-list {
+    padding: 0px;
+}
+
+.v-autocomplete,
+.v-btn:not(.v-btn--variant-text),
+:not(.v-field--appended)>.v-field__field {
+    @extend .border, .rounded;
+
+    &:not(.v-card) &:not(:active) {
+        @extend .elevation-2;
+    }
+}
+
+.v-expansion-panels,
+.v-card {
+    @extend .border, .rounded, .elevation-2;
+}
+
+.v-ripple__container {
+    visibility: hidden;
+}
+
+.v-avatar {
+    text-transform: uppercase !important;
+}
+
+:not(.v-slide-group__content)>.v-btn:active,
+.a.v-card:active,
+.v-card.active {
+    transition: none;
+    box-shadow: 0 0 0 0.1rem currentColor !important;
+}
+
+.v-container {
+    max-width: 900px;
+}
+
+a {
+    color: inherit;
+}
+
+.v-overlay__scrim {
+    background-color: black;
+}
+
+// ----------------
+
+*:not(.v-icon) {
+    font-family: 'Sora', sans-serif !important;
+    text-transform: none !important;
+}
+
+pre,
+.v-pagination__item {
+    font-family: 'Jetbrains Mono', monospace !important;
+}
+
+::selection {
+    color: white;
+    background: rgba(var(--v-theme-primary), 0.9);
+}
+
+// ----------------
+
 
 h1.hero{
     @media only screen and (min-width: 1000px) {
@@ -33,59 +111,8 @@ h2.hero{
     }
 }
 
-.v-ripple__container {
-    visibility: hidden;
-}
-
-.v-avatar {
-    text-transform: uppercase !important;
-}
-
-*:not(.v-icon) {
-    font-family: 'Sora', sans-serif !important;
-    text-transform: none !important;
-}
-
-.v-btn:active,
-.a.v-card:active,
-.v-card.active {
-    transition: 200ms;
-    box-shadow: 0 0 0 0.1rem currentColor !important;
-}
-
-.v-field,
-.v-field__field {
-    border-radius: 10px !important;
-}
-
-.v-container {
-    max-width: 900px;
-}
-
 .display {
     font-weight: 800;
     font-size: 4em;
     text-transform: uppercase;
-}
-
-a {
-    color: inherit;
-}
-
-pre {
-    font-family: 'Jetbrains Mono', monospace !important;
-    background-color: black;
-    border-radius: 50px;
-    display: inline-block;
-    padding: 3px 7px 3px 7px;
-    color: rgb(var(--v-theme-primary))
-}
-
-::selection {
-    color: white;
-    background: rgba(var(--v-theme-primary), 0.9);
-}
-
-.v-overlay__scrim {
-    background-color: black;
 }
