@@ -5,8 +5,8 @@
  */
 
 // https://next.vuetifyjs.com/features/sass-variables/`
-
 @use 'vuetify' with ($border-radius-root: 0.3em);
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
 
 :root {
     --v-shadow-key-umbra-opacity: rgba(0, 0, 0, 0);
@@ -17,27 +17,32 @@
     transition-timing-function: cubic-bezier(.5, .5, 0, 1) !important;
 }
 
-.v-overlay__content {
-    @extend .rounded, .border
+.v-overlay__content,
+.v-autocomplete,
+.v-btn:not(.v-btn--variant-text, .bg-primary),
+:not(.v-field--appended)>.v-field__field {
+    @extend .border;
+
+    &:not(.v-btn--icon){
+        @extend .rounded;
+    }
+
+    &:not(.v-card, :active) {
+        @extend .elevation-2;
+    }
 }
 
 .v-overlay__content>.v-list {
     padding: 0px;
 }
 
-.v-autocomplete,
-.v-btn:not(.v-btn--variant-text, .bg-primary),
-:not(.v-field--appended)>.v-field__field {
-    @extend .border, .rounded;
-
-    &:not(.v-card) &:not(:active) {
-        @extend .elevation-2;
-    }
-}
-
 .v-expansion-panels,
 .v-card {
-    @extend .border, .rounded, .elevation-2;
+    @extend .rounded, .elevation-2;
+
+    &:not(.v-card--variant-tonal) {
+        @extend .border;
+    }
 }
 
 .v-ripple__container {
