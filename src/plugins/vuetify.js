@@ -20,6 +20,9 @@ export default createVuetify({
       ripple: false,
       hideDetails: 'auto',
     },
+    VAppBar: {
+      flat: true,
+    },
     VExpansionPanel: {
       rounded: 1,
     },
@@ -91,17 +94,19 @@ export default createVuetify({
     VTooltip: {
       theme: 'light'
     },
-    VAppBar: {
-      border: "b",
-    },
   },
   theme: {
     themes: {
       light: {
         colors: {
-          primary: '#1867C0',
-          secondary: '#5CBBF6',
+          primary: '#009688',
         },
+      },
+      dark: {
+        colors: {
+          primary: '#009688',
+        },
+        dark:true
       },
     },
   },

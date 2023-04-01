@@ -26,7 +26,7 @@
 }
 
 .v-autocomplete,
-.v-btn:not(.v-btn--variant-text),
+.v-btn:not(.v-btn--variant-text, .bg-primary),
 :not(.v-field--appended)>.v-field__field {
     @extend .border, .rounded;
 
