@@ -7,14 +7,22 @@
 // Styles
 import '@mdi/font/css/materialdesignicons.css'
 import 'vuetify/styles'
+import { mdi } from 'vuetify/iconsets/mdi'
+import { aliases, fa } from 'vuetify/iconsets/fa'
 
 // Composables
 import { createVuetify } from 'vuetify'
 
 // https://vuetifyjs.com/en/introduction/why-vuetify/#feature-guides
 export default createVuetify({
-  ssr: true,
-
+  icons:{
+    defaultSet: 'mdi',
+    aliases,
+    sets: {
+      mdi,
+      fa,
+    }
+  },
   defaults: {
     global: {
       ripple: false,
@@ -22,6 +30,7 @@ export default createVuetify({
     },
     VAppBar: {
       flat: true,
+      border: "b",
     },
     VExpansionPanel: {
       rounded: 1,
@@ -90,9 +99,6 @@ export default createVuetify({
     VCard: {
       rounded: 1,
       border: true,
-    },
-    VTooltip: {
-      theme: 'light'
     },
   },
   theme: {
