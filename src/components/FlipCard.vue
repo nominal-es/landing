@@ -1,5 +1,10 @@
 <template>
-    <v-card :ref="id" data-tilt :height="height" class="flip-card">
+    <v-card v-intersect="{
+        handler: onIntersect,
+        options: {
+            threshold: [0.95, 1.0]
+        }
+    }" :id="id" data-tilt :height="height" class="flip-card">
         <div class="flip-card-inner">
             <div class="flip-card-front">
                 <slot name="front" />
@@ -15,16 +20,34 @@
 import VanillaTilt from 'vanilla-tilt';
 export default {
     props: ['height'],
+    beforeMount() {
+        this.id = `id-${Math.abs(Math.trunc(Math.random() * 1000000))}`
+    },
     mounted() {
-        VanillaTilt.init(document.querySelectorAll("[data-tilt]"),{
-            glare: true,
-            max: 5,
-            "max-glare": 0.5
-        });
+        try {
+            VanillaTilt.init(document.querySelector(`#${this.id}`), {
+                glare: true,
+                max: 5,
+                "max-glare": 0.5,
+                gyroscope: true,
+            });
+        } catch (error) {
+
+        }
     },
     data: () => ({
-        id: null
-    })
+        id: null,
+    }),
+    methods: {
+        onIntersect(isIntersecting) {
+            const element = document.querySelector(`#${this.id}`)
+            if (isIntersecting) {
+                element.classList.add('flipped')
+            } else {
+                element.classList.remove('flipped')
+            }
+        },
+    }
 }
 </script>
 
@@ -42,7 +65,8 @@ export default {
     transform-style: preserve-3d;
 }
 
-.flip-card:hover .flip-card-inner {
+.flip-card:hover .flip-card-inner,
+.flip-card.flipped .flip-card-inner {
     transform: rotateY(180deg);
 }
 

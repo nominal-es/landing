@@ -15,7 +15,7 @@
         </div>
         <v-row>
             <v-col cols="12" md="6" v-for="feature in features" :key="feature.name">
-                <flip-card height="350" theme="dark">
+                <flip-card :height="$vuetify.display.mdAndUp ? 350 : 500" theme="dark">
                     <template v-slot:front>
                         <v-card :border="0" variant="tonal" color="primary" class="pa-4 fill-height">
                             <v-container class="fill-height">
