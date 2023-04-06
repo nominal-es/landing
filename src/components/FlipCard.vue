@@ -1,19 +1,30 @@
 <template>
-    <v-card :height="height" class="flip-card">
+    <v-card :ref="id" data-tilt :height="height" class="flip-card">
         <div class="flip-card-inner">
             <div class="flip-card-front">
-                <slot name="front"/>
+                <slot name="front" />
             </div>
             <div class="flip-card-back">
-                <slot name="back"/>
+                <slot name="back" />
             </div>
         </div>
     </v-card>
 </template>
 
 <script>
+import VanillaTilt from 'vanilla-tilt';
 export default {
-    props: ['height']
+    props: ['height'],
+    mounted() {
+        VanillaTilt.init(document.querySelectorAll("[data-tilt]"),{
+            glare: true,
+            max: 5,
+            "max-glare": 0.5
+        });
+    },
+    data: () => ({
+        id: null
+    })
 }
 </script>
 
@@ -43,6 +54,7 @@ export default {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
+
 .flip-card-back {
     transform: rotateY(180deg);
 }
