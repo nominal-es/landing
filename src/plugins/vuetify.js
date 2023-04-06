@@ -13,6 +13,8 @@ import { aliases, fa } from 'vuetify/iconsets/fa'
 // Composables
 import { createVuetify } from 'vuetify'
 
+const primary = '#FF5252'
+
 // https://vuetifyjs.com/en/introduction/why-vuetify/#feature-guides
 export default createVuetify({
   icons:{
@@ -105,12 +107,12 @@ export default createVuetify({
     themes: {
       light: {
         colors: {
-          primary: '#009688',
+          primary: primary,
         },
       },
       dark: {
         colors: {
-          primary: '#009688',
+          primary: primary,
         },
         dark:true
       },
