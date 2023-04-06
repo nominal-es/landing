@@ -40,14 +40,16 @@ export default {
     }),
     methods: {
         onIntersect(isIntersecting) {
+            if(this.$vuetify.display.smAndDown){
             const element = document.querySelector(`#${this.id}`)
             if (isIntersecting) {
                 element.classList.add('flipped')
             } else {
                 element.classList.remove('flipped')
             }
+            }
         },
-    }
+    },
 }
 </script>
 
