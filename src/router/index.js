@@ -8,6 +8,7 @@ const routes = [
       return null
     }
   },
+  { path: '/legal', component: () => import('@/views/Legal') },
 ]
 
 const router = createRouter({
