@@ -144,11 +144,11 @@
 
             <section>
                 <h2>8. Governing Law</h2>
-                <p>These Terms of Service are governed by and construed in accordance with the laws of [Your Jurisdiction].
+                <p>These Terms of Service are governed by and construed in accordance with the laws of Spain.
                     Any
                     legal suit, action, or proceeding arising out of or related to these Terms of Service shall be
                     instituted
-                    exclusively in the federal or state courts located in [Your Jurisdiction].</p>
+                    exclusively in the federal or state courts located in Spain.</p>
             </section>
 
             <section>
