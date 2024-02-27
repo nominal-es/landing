@@ -38,8 +38,8 @@
                                         }}
                                     </v-card>
                                     <v-card variant="outlined" class="pa-3">
-                                        <v-chip theme="light" color="primary" label size="small">purecore</v-chip> {{
-                                            feature.purecore }}
+                                        <v-chip theme="light" color="primary" label size="small">serverbench</v-chip> {{
+                                            feature.serverbench }}
                                     </v-card>
                                 </v-row>
                             </v-container>
@@ -63,9 +63,9 @@
             </v-col>
             <v-col md="6" cols="12">
                 <v-card :border="0" variant="tonal" color="primary" class="pa-7 text-center">
-                    <h1>purecore</h1>
+                    <h1>serverbench</h1>
                     <h2 class="my-5">Easily monetize, host and study your gaming community</h2>
-                    <v-btn href="https://purecore.io" icon="mdi-open-in-new" />
+                    <v-btn href="https://serverbench.io" icon="mdi-open-in-new" />
                 </v-card>
             </v-col>
         </v-row>
@@ -86,25 +86,25 @@ export default {
                     name: 'develop',
                     icon: 'mdi-wrench',
                     grifpkg: 'easily define both free and paid dependencies for game servers, keep them up-to-date, spin-up temporary instances, and more',
-                    purecore: 'create customized web and game experiences, such as creating custom checkout flows, login systems, game data syncing, permission control, and more'
+                    serverbench: 'create customized web and game experiences, such as creating custom checkout flows, login systems, game data syncing, permission control, and more'
                 },
                 {
                     name: 'deploy',
                     icon: 'mdi-source-merge',
                     grifpkg: 'automatically republish your plugins in software platforms instead of having to publish every update on every site manually on a regular basis',
-                    purecore: 'automatically or manually create powerful game servers at a record price, with extremely quick setup times, amazing reliability, and a high amount of dedicated compute power'
+                    serverbench: 'automatically or manually create powerful game servers at a record price, with extremely quick setup times, amazing reliability, and a high amount of dedicated compute power'
                 },
                 {
                     name: 'study',
                     icon: 'mdi-chart-line-variant',
                     grifpkg: 'get detailed download statistics for your software, and quickly determine if the software you are using is on the path of being abandonware',
-                    purecore: 'get macro and micro analysis for your community. easily determine player retention, gameplay performance, player interactions, community popularity, and more'
+                    serverbench: 'get macro and micro analysis for your community. easily determine player retention, gameplay performance, player interactions, community popularity, and more'
                 },
                 {
                     name: 'monetize',
                     icon: 'mdi-piggy-bank',
                     grifpkg: 'get money from sponsored download pages, donation links and widgets, and sponsored messages when installing or updating your software',
-                    purecore: 'sell one-time or reccurent in-game perks or community badges via your webstore, create web designs for other purecore customers, and get paid from your supporters'
+                    serverbench: 'sell one-time or reccurent in-game perks or community badges via your webstore, create web designs for other serverbench customers, and get paid from your supporters'
                 },
             ]
         }
